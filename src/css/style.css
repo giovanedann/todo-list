@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap'); /* importing the open sans font family */
+
+:root {
+    --primarycolor: rgba(1, 252, 156, 0.93); /* declaring a variable in css */
+    --secondarycolor: rgb(5, 179, 112);
+    --tertiarycolor: rgba(7, 146, 76, 0.93);
+}
+
+
+* {  /* selecting all the html file */
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primarycolor); /* using a variable in css */
+}
+
+.container {  /* referencing the container class (we named the class of our div container) */
+    font-family: "Open Sans", sans-serif; 
+    max-width: 650px;
+    margin: 30px 50px;  /* the distance between the container and the margin of the page */
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input  { /* selecting any inputs, labels and buttons in the form */
+    width: 50%; /* setting the elements to occupy the whole page */
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.input { /* selecting any inputs in the form */
+    font-size: 20px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input:focus {
+    outline: 1px solid var(--primarycolor)
+}
+
+.todobutton { /* selecting any buttons in the form */
+    border-radius: 5px;  /* radius of the border of the button */
+    background: var(--primarycolor); /* background of the button */
+    color: rgb(0, 0, 0); /* font color of the button */
+    font-family: "Open Sans", sans-serif; /* font family of the button */
+    font-size: 18px; /* font size of the button */
+    font-weight:400;
+    margin-top: 10px; /* distance between the last element before the button */
+    height: 30px; /* height of the button (altura) */
+    cursor: pointer; /* when passing cursor through button, will set cursor to pointer */
+}
+
+.todobutton:hover {
+    background: var(--secondarycolor); /* background of the button will change color when passing the cursor through button */
+}
+
+.todobutton:active {
+    background: var(--tertiarycolor); /* background of the button will change color when clicked */
+}
+
+#to-do-title {
+    font-size: 3em;
+}
+
+.todo-line {
+    font-size: 30px;
+    padding: 8px;
+    margin: auto;
+}
+
+.todo-deletebutton {
+    border-radius: 5px;  /* radius of the border of the button */
+    background: var(--primarycolor); /* background of the button */
+    color: rgb(0, 0, 0); /* font color of the button */
+    font-family: "Open Sans", sans-serif; /* font family of the button */
+    font-size: 18px; /* font size of the button */
+    font-weight:400;
+    margin-top: 10px; /* distance between the last element before the button */
+    height: 30px; /* height of the button (altura) */
+    cursor: pointer; /* when passing cursor through button, will set cursor to pointer */
+    margin-left: 20px;
+}
+
+.todo-deletebutton:hover {
+    background: rgb(211, 42, 42);
+}
